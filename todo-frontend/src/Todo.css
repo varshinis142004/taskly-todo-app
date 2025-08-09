@@ -1,0 +1,166 @@
+/* Full-page background */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: url("C:\Users\Varshini\OneDrive\Desktop\todo-app\todo-frontend\todo-app\public\bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Main container */
+.row {
+    max-width: 900px;
+    margin: auto;
+    padding: 15px;
+}
+
+/* Glassy Header */
+.bg-success {
+    background: rgba(0, 128, 0, 0.35) !important;
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    padding: 10px;
+}
+
+/* Glass Input Form */
+.form-group {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(6px);
+    border-radius: 12px;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.form-group input {
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.7);
+    transition: 0.3s;
+}
+
+.form-group input:focus {
+    background: white;
+    box-shadow: 0 0 8px rgba(235, 37, 37, 0.4);
+}
+
+/* Buttons */
+.btn {
+    border-radius: 8px;
+    transition: 0.3s ease;
+    border: none;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* Glass Task List Items */
+.list-group-item {
+    background: rgba(255, 255, 255, 0.25) !important;
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 15px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Title styling */
+.list-group-item .fw-bold {
+    font-size: 1.2rem;
+    color: #eb3525;
+}
+
+/* Success & Error messages */
+.text-success {
+    font-weight: bold;
+    background: rgba(16, 185, 129, 0.25);
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+.text-danger {
+    font-weight: bold;
+    background: rgba(239, 68, 68, 0.25);
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.list-group-item .fw-bold {
+    font-size: 1.2rem;
+    color: #000; /* black */
+}
+
+.btn-warning {
+    background-color: #fb6356 !important; /* change to your desired color */
+    border-color: #fb6356 !important;
+    color: white !important;
+}
+
+.btn-warning:hover {
+    background-color: #ffffff !important; /* slightly darker on hover */
+    border-color: #f9f9f9 !important;
+    color: rgb(236, 25, 25) !important;
+}
+
+.btn btn-warning {
+    background-color: #fb6356 !important; /* change to your desired color */
+    border-color: #fb6356 !important;
+    color: white !important;
+}
+
+.btn .btn-warning:hover {
+    background-color: #ffffff !important; /* slightly darker on hover */
+    border-color: #f9f9f9 !important;
+    color: rgb(236, 25, 25) !important;
+}
+.btn-danger {
+    background-color: #d91a09 !important; /* change to your desired color */
+    border-color: #d91a09 !important;
+    color: white !important;
+}
+
+.btn-warning:hover {
+    background-color: #ffffff !important; /* slightly darker on hover */
+    border-color: #f9f9f9 !important;
+    color: rgb(196, 13, 13) !important;
+}
+
+.completed .fw-bold,
+.completed span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Bigger, curved checkbox */
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #3fff7c; /* green tick box color */
+    border-radius: 100px; /* makes it curvy */
+    cursor: pointer;
+    border-color: red;
+}
+
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .form-group {
+        flex-direction: column;
+    }
+    .btn {
+        width: 100%;
+    }
+}
